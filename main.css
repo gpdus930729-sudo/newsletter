@@ -1,0 +1,49 @@
+/* wrap */
+.wrap {font-family: 'TheJamsil', 'Noto Sans KR'; width:100%;}
+.wrap p.tit {font-family: 'NPSfontBold'; font-size:38px; font-weight:bold; margin-bottom:65px;}
+
+/* main_wrap */
+.wrap .main_wrap {width:100%; overflow:hidden;}
+.wrap .main_wrap .img_box {width:100%; height:auto; padding:0; margin:0 auto; position:relative; z-index:5; position:relative;}
+.wrap .main_wrap .img_box img {width:100%;}
+.wrap .main_wrap .img_box .tit {position:absolute; width:100%; text-align:center; top:65%; left:0; z-index:10; color:#fff; font-size:60px;
+text-shadow:0 0 5px rgba(0,0,0,0.4); font-family: 'omyu_pretty'; line-height:1.25; letter-spacing:5px;}
+
+/* port_wrap */
+.wrap .port_wrap {width:100%; padding:120px 0; text-align:center; overflow:hidden; background:#f4f5f7;}
+.wrap .port_wrap ul {display:inline-block; letter-spacing:-1px; margin-bottom:10px;}
+.wrap .port_wrap ul li {display:inline-block; text-align:left; width:480px; background:#f4f4f4; border:5px solid #f4f4f4; margin:4px;}
+.wrap .port_wrap ul li img {width:100%; display:block;}
+.wrap .port_wrap ul li div {width:100%; display:table; height:100px;}
+.wrap .port_wrap ul li div dl {display:table-cell; vertical-align:middle;}
+.wrap .port_wrap ul li div dl dt {font-size:20px; color:#000; margin:20px 0 15px; line-height:1.15;}
+.wrap .port_wrap ul li div dl dd {font-size:14px; color:#a5a6a7;}
+.wrap .port_wrap ul li div dl dd + dd {margin-top:15px; font-size:12px; color:#777777;}
+
+/* btn_top */
+.btn_top {position:fixed; bottom:6%; right:2%; cursor:pointer; background:#a0a0a0; width:60px; height:60px; border-radius:7px; text-align:center; z-index:1100; display:none;}
+.btn_top span {display:block; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:url("../img/btn_top_img.png"); background-size:cover; width:20px; height:12px;}
+.btn_top:focus, .btn_top:hover {background:#fb8ebf;}
+
+
+@media screen and (max-width:1024px){
+
+	/* main_wrap */
+	.wrap .main_wrap .img_box .tit {top:470px; width:500px; left:50%; margin-left:-250px;}
+
+	/* port_wrap */
+	.wrap .port_wrap {padding:100px 0 120px;}
+
+}
+
+
+@media screen and (max-width:720px){
+
+	/* main_wrap */
+	.wrap .main_wrap .img_box .tit {top:80vw; width:69.44vw; margin-left:-34.72vw; font-size:8.33vw; text-shadow:0 0 0.7vw rgba(0,0,0,0.4); letter-spacing:0.7vw; line-height:1.1;}
+
+	/* btn_top */
+	.btn_top {width:8.33vw; height:8.33vw; border-radius:0.97vw;}
+	.btn_top span {width:2.78vw; height:1.67vw;}
+
+}
